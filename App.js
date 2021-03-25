@@ -1,13 +1,13 @@
+import 'react-native-gesture-handler';
 import React from 'react';
 
 import {StatusBar} from 'react-native';
-import Welcome from './src/Pages/Welcome';
-
+import Routes from './src/routes/routes';
 const App = () => {
   return (
     <>
-    <StatusBar barStyle="light-content" backgroundColor="#151515" />
-    <Welcome />
+      <StatusBar barStyle="light-content" backgroundColor="#151515" />
+      <Routes />
     </>
   );
 };

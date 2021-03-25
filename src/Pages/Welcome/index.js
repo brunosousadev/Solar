@@ -21,7 +21,10 @@ const Welcome = () => {
         <Description>Comece sua jornada pelo sistema solar.</Description>
         <ContainerButton>
           <Info>Pronto para a decolagem?</Info>
-          <Button>
+          <Button
+            onPress={() => {
+              console.log('onPress');
+            }}>
             <TextButton>Começar</TextButton>
             <Forward source={forwardImage} />
           </Button>
