@@ -1,5 +1,5 @@
 import React from 'react';
-import {Image, View, Text} from 'react-native';
+
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../Pages/Home';
 import Gallery from '../Pages/Gallery';
