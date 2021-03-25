@@ -5,7 +5,6 @@ import {View, Text} from 'react-native';
 
 const Search = () => {
   return (
-<<<<<<< HEAD
     <View
       style={{
         flex: 1,
@@ -13,10 +12,7 @@ const Search = () => {
         justifyContent: 'center',
         backgroundColor: '#000000',
       }}>
-=======
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
->>>>>>> 2bf2c3ea096ff56c1c16362c6c2e62daf9752422
-      <Text>Search Screen</Text>
+      <Text style={{color: '#fff'}}>Search Screen</Text>
     </View>
   );
 };

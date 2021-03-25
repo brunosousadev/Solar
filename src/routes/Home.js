@@ -1,10 +1,12 @@
 import React from 'react';
 
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+
 import Home from '../Pages/Home';
 import Gallery from '../Pages/Gallery';
 import Save from '../Pages/Save';
 import Search from '../Pages/Search';
+import MyTab from './MyTab';
 
 const Tab = createBottomTabNavigator();
 
@@ -28,15 +30,37 @@ function HomeRoute() {
   const {Navigator, Screen} = Tab;
   return (
     <Navigator
-      screenOptions={({route, navigation}) => {
-        return {tabBarLabel: navigation.isFocused() ? route.name : ''};
-      }}
+      tabBar={props => <MyTab {...props} />}
       initialRouteName="Home"
       tabBarOptions={tabBarOptions}>
-      <Screen name="Home" component={Home} />
-      <Screen name="Search" component={Search} />
-      <Screen name="Save" component={Save} />
-      <Screen name="Gallery" component={Gallery} />
+      <Screen
+        name="Home"
+        component={Home}
+        options={{
+          title: 'Início',
+        }}
+      />
+      <Screen
+        name="Search"
+        component={Search}
+        options={{
+          title: 'Buscar',
+        }}
+      />
+      <Screen
+        name="Save"
+        component={Save}
+        options={{
+          title: 'Salvos',
+        }}
+      />
+      <Screen
+        name="Gallery"
+        component={Gallery}
+        options={{
+          title: 'Galeria',
+        }}
+      />
     </Navigator>
   );
 }
