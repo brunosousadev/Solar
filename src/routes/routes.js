@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 
 import Welcome from '../Pages/Welcome';
+import HomeRoute from './Home';
 
 const Stack = createStackNavigator();
 
@@ -17,6 +18,7 @@ function Route() {
           headerShown: false,
         }}>
         <Screen name="Welcome" component={Welcome} />
+        <Screen name="HomeRoute" component={HomeRoute} />
       </Navigator>
     </NavigationContainer>
   );

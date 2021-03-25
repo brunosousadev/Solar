@@ -1,4 +1,5 @@
 import React from 'react';
+import {useNavigation} from '@react-navigation/native';
 import backgroundImage from '../../assets/Background.png';
 import forwardImage from '../../assets/Forward.png';
 
@@ -14,6 +15,7 @@ import {
 } from './styles';
 
 const Welcome = () => {
+  const navigation = useNavigation();
   return (
     <Container>
       <ImageBackground source={backgroundImage}>
@@ -23,7 +25,7 @@ const Welcome = () => {
           <Info>Pronto para a decolagem?</Info>
           <Button
             onPress={() => {
-              console.log('onPress');
+              navigation.navigate('HomeRoute');
             }}>
             <TextButton>Começar</TextButton>
             <Forward source={forwardImage} />
