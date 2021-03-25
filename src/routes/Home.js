@@ -7,6 +7,10 @@ import Gallery from '../Pages/Gallery';
 import Save from '../Pages/Save';
 import Search from '../Pages/Search';
 import MyTab from './MyTab';
+import HomeIcon from '../assets/IconTabBar/HomeWhite.svg';
+import SearchIcon from '../assets/IconTabBar/SearchWhite.svg';
+import SaveIcon from '../assets/IconTabBar/SaveWhite.svg';
+import GalleryIcon from '../assets/IconTabBar/GalleryWhite.svg';
 
 const Tab = createBottomTabNavigator();
 
@@ -25,12 +29,18 @@ const tabBarOptions = {
     paddingTop: 10,
   },
 };
+const IconScreen = {
+  Home: HomeIcon,
+  Search: SearchIcon,
+  Save: SaveIcon,
+  Gallery: GalleryIcon,
+};
 
 function HomeRoute() {
   const {Navigator, Screen} = Tab;
   return (
     <Navigator
-      tabBar={props => <MyTab {...props} />}
+      tabBar={props => <MyTab {...props} IconScreen={IconScreen} />}
       initialRouteName="Home"
       tabBarOptions={tabBarOptions}>
       <Screen

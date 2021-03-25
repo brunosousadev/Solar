@@ -1,8 +1,7 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet, Image} from 'react-native';
-import Forward from '../../assets/Forward.png';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 
-function MyTabBar({state, descriptors, navigation}) {
+function MyTabBar({state, descriptors, navigation, IconScreen}) {
   const renderLabel = (label, isFocused) => {
     if (isFocused) {
       return <Text style={styles.Label}>{isFocused ? label : ''}</Text>;
@@ -10,6 +9,10 @@ function MyTabBar({state, descriptors, navigation}) {
     return null;
   };
 
+  const renderIcon = name => {
+    const Icon = IconScreen[name];
+    return <Icon width={24} height={24} />;
+  };
   return (
     <View style={styles.Container}>
       {state.routes.map((route, index) => {
@@ -50,7 +53,7 @@ function MyTabBar({state, descriptors, navigation}) {
             onPress={onPress}
             onLongPress={onLongPress}
             style={styles.TouchableOpacity}>
-            <Image source={Forward} style={styles.Icon} />
+            {renderIcon(route.name)}
             {renderLabel(label, isFocused)}
           </TouchableOpacity>
         );
@@ -68,7 +71,7 @@ const styles = StyleSheet.create({
   },
   Label: {
     color: '#ffff',
-    marginTop: 10,
+    marginTop: 5,
   },
   TouchableOpacity: {
     flex: 1,
