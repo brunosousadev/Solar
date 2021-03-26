@@ -1,19 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Container} from './styles';
+import IconPlanets from '../../assets/Planets.png';
 
-// import { Container } from './styles';
-
+import Category from '../../components/Category';
 const Home = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#000000',
-      }}>
-      <Text style={{color: '#fff'}}>Home Screen</Text>
-    </View>
+    <Container>
+      <Category icon={IconPlanets} label={'Planetas'} />
+    </Container>
   );
 };
 
