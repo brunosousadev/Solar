@@ -1,20 +1,21 @@
 import React from 'react';
-import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {Label, Container, TouchableOpacity} from './stlyes';
 
 function MyTabBar({state, descriptors, navigation, IconScreen}) {
   const renderLabel = (label, isFocused) => {
     if (isFocused) {
-      return <Text style={styles.Label}>{isFocused ? label : ''}</Text>;
+      return <Label>{isFocused ? label : ''}</Label>;
     }
     return null;
   };
 
   const renderIcon = name => {
     const Icon = IconScreen[name];
-    return <Icon width={24} height={24} />;
+    return Icon ? <Icon width={24} height={24} /> : null;
   };
+
   return (
-    <View style={styles.Container}>
+    <Container>
       {state.routes.map((route, index) => {
         const {options} = descriptors[route.key];
         const label =
@@ -51,36 +52,13 @@ function MyTabBar({state, descriptors, navigation, IconScreen}) {
             accessibilityLabel={options.tabBarAccessibilityLabel}
             testID={options.tabBarTestID}
             onPress={onPress}
-            onLongPress={onLongPress}
-            style={styles.TouchableOpacity}>
+            onLongPress={onLongPress}>
             {renderIcon(route.name)}
             {renderLabel(label, isFocused)}
           </TouchableOpacity>
         );
       })}
-    </View>
+    </Container>
   );
 }
-const styles = StyleSheet.create({
-  Container: {
-    flexDirection: 'row',
-    backgroundColor: '#151515',
-    height: 60,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  Label: {
-    color: '#ffff',
-    marginTop: 5,
-  },
-  TouchableOpacity: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  Icon: {
-    width: 16,
-    height: 16,
-  },
-});
 export default MyTabBar;
