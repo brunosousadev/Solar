@@ -3,7 +3,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-diagrama">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-como-executar">Como executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Licença</a>
 </p>
@@ -23,6 +23,7 @@
 <p align="center">
   <img alt="dev.finances" src=".github/Cover.jpg" width="100%">
 </p>
+
 ## ✨ Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -34,8 +35,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Sejam bem-vindos ao Solar System! Este é o terceiro projeto da **umpontoseis** criado de designers para desenvolvedores, que traz com ele o intuito de aperfeiçoar nossas habilidades e estreitar os laços profissionais.
 
 E como sou um amante de Astronomia e Tecnologia quando encontrei esse projeto fiquei feliz e empolgado para implementar e compartilhar.
-## 🔖 Layout
 
+## 🔖 Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/DVJJectlyEirYoAOJyxmQn/Solar-System---Jonas-Milan-(Community)?node-id=149%3A0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
