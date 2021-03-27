@@ -1,5 +1,8 @@
 import styled from 'styled-components/native';
 import {TouchableOpacity} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
+
+export const WallpaperButton = styled(LinearGradient)``;
 
 export const Container = styled.View`
   flex: 1;
@@ -39,9 +42,7 @@ export const Forward = styled.Image`
   width: 16px;
   height: 16px;
 `;
-
 export const Button = styled(TouchableOpacity)`
-  background-color: #ef5f53;
   height: 51px;
   justify-content: center;
   align-items: center;

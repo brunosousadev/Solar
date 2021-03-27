@@ -4,6 +4,7 @@ import backgroundImage from '../../assets/Background.png';
 import forwardImage from '../../assets/Forward.png';
 
 import {
+  WallpaperButton,
   Container,
   ContainerButton,
   Info,
@@ -23,13 +24,18 @@ const Welcome = () => {
         <Description>Comece sua jornada pelo sistema solar.</Description>
         <ContainerButton>
           <Info>Pronto para a decolagem?</Info>
-          <Button
-            onPress={() => {
-              navigation.navigate('HomeRoute');
-            }}>
-            <TextButton>Começar</TextButton>
-            <Forward source={forwardImage} />
-          </Button>
+          <WallpaperButton
+            colors={['#ef5f53', '#fa8f70']}
+            start={{x: 0, y: 0}}
+            end={{x: 1, y: 0}}>
+            <Button
+              onPress={() => {
+                navigation.navigate('HomeRoute');
+              }}>
+              <TextButton>Começar</TextButton>
+              <Forward source={forwardImage} />
+            </Button>
+          </WallpaperButton>
         </ContainerButton>
       </ImageBackground>
     </Container>
