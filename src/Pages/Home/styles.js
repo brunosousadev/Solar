@@ -12,3 +12,14 @@ export const ImageBackground = styled.ImageBackground`
   width: 100%;
   height: 100%;
 `;
+
+export const ContainerItem = styled.View`
+  padding: 20px 0px 0px 20px;
+`;
+
+export const CategoryLabel = styled.Text`
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-top: 40px;
+`;
