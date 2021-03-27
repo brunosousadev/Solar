@@ -1,4 +1,7 @@
 import styled from 'styled-components/native';
+import {FlatList} from 'react-native';
+
+export const ScrollItem = styled(FlatList)``;
 
 export const Container = styled.View`
   flex: 1;
@@ -14,12 +17,12 @@ export const ImageBackground = styled.ImageBackground`
 `;
 
 export const ContainerItem = styled.View`
-  padding: 20px 0px 0px 20px;
+  margin: 20px 0px 0px 20px;
 `;
 
-export const CategoryLabel = styled.Text`
+export const InfoList = styled.Text`
   font-size: 16px;
   color: #ffffff;
   padding-left: 20px;
-  padding-top: 40px;
+  padding-top: 20px;
 `;

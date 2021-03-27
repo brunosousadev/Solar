@@ -16,7 +16,7 @@ const AppBar = () => {
     <Container>
       <ContainerInfo>
         <User>
-          Olá, <FullName>Bruno Sousa</FullName>{' '}
+          Olá, <FullName>Julianna de Paula</FullName>{' '}
         </User>
         <Description>o que você vai aprender hoje ?</Description>
       </ContainerInfo>
