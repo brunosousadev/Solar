@@ -42,7 +42,6 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 - Instale as dependências com `yarn install`
 - Rode `yarn start` e em seguida rode `yarn android`
 
-A aplicação pode ser acessada em [`localhost:3333`](http://localhost:3333).
 
 ## 📄 Licença
 
