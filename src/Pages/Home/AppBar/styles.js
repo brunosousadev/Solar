@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import LinearGradient from 'react-native-linear-gradient';
 
 export const Container = styled.View`
   padding: 20px 20px;
@@ -14,7 +15,7 @@ export const ContainerSetting = styled.View`
   flex: 1;
 `;
 
-export const UserName = styled.Text`
+export const User = styled.Text`
   font-size: 32px;
   font-weight: bold;
   color: #ffffff;

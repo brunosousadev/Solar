@@ -5,7 +5,7 @@ import {
   Container,
   ContainerInfo,
   ContainerSetting,
-  UserName,
+  User,
   FullName,
   Description,
   SettingsIcon,
@@ -15,9 +15,9 @@ const AppBar = () => {
   return (
     <Container>
       <ContainerInfo>
-        <UserName>
+        <User>
           Olá, <FullName>Bruno Sousa</FullName>{' '}
-        </UserName>
+        </User>
         <Description>o que você vai aprender hoje ?</Description>
       </ContainerInfo>
       <ContainerSetting>
