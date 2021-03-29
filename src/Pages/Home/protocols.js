@@ -1,4 +1,8 @@
 import IconPlanets from '../../assets/Planets.png';
+import IconAsteroids from '../../assets/Asteroids.png';
+import IconStars from '../../assets/Stars.png';
+import IconGalaxies from '../../assets/Galaxies.png';
+
 import MercuryImage from '../../assets/Planet/Mercury.png';
 import VenusImage from '../../assets/Planet/Venus.png';
 
@@ -33,17 +37,17 @@ const category = [
     colors: ['#5935FF', '#47408E'],
   },
   {
-    icon: IconPlanets,
+    icon: IconAsteroids,
     label: 'Asteróides',
     colors: ['#ff6cd9', '#ff2184'],
   },
   {
-    icon: IconPlanets,
+    icon: IconStars,
     label: 'Estrelas',
     colors: ['#01d4e4', '#009de0'],
   },
   {
-    icon: IconPlanets,
+    icon: IconGalaxies,
     label: 'Galáxias',
     colors: ['#f9c270', '#ffaa2b'],
   },
