@@ -1,4 +1,3 @@
-import HomePage from '../../assets/HomePage.png';
 import IconPlanets from '../../assets/Planets.png';
 import MercuryImage from '../../assets/Planet/Mercury.png';
 import VenusImage from '../../assets/Planet/Venus.png';
@@ -14,6 +13,7 @@ import Category from '../../components/Category';
 import AppBar from './AppBar';
 import Input from '../../components/Input';
 import PlanetCard from '../../components/Cards/PlanetCard';
+import Wallpaper from '../../components/Wallpaper';
 
 const planets = [
   {name: 'Mercúrio', image: MercuryImage},
@@ -49,4 +49,4 @@ const category = [
   },
 ];
 
-export {planets, category, HomePage, Category, AppBar, Input, PlanetCard};
+export {planets, category, Wallpaper, Category, AppBar, Input, PlanetCard};

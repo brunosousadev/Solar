@@ -1,28 +1,22 @@
 import React, {useState} from 'react';
 
 import {
-  HomePage,
   Category,
   AppBar,
   Input,
   PlanetCard,
   planets,
   category,
+  Wallpaper,
 } from './protocols';
 
-import {
-  Container,
-  ImageBackground,
-  InfoList,
-  ScrollItem,
-  ContainerItem,
-} from './styles';
+import {Container, InfoList, ScrollItem, ContainerItem} from './styles';
 
 const Home = () => {
   const [text, onChangeText] = useState('');
   return (
     <Container>
-      <ImageBackground source={HomePage}>
+      <Wallpaper>
         <AppBar />
         <Input
           text={text}
@@ -51,7 +45,7 @@ const Home = () => {
           )}
           keyExtractor={(_item, index) => index}
         />
-      </ImageBackground>
+      </Wallpaper>
     </Container>
   );
 };
