@@ -10,12 +10,6 @@ export const Container = styled.View`
   background-color: #000000;
 `;
 
-export const ImageBackground = styled.ImageBackground`
-  flex: 1;
-  width: 100%;
-  height: 100%;
-`;
-
 export const ContainerItem = styled.View`
   margin: 20px 0px 0px 20px;
 `;

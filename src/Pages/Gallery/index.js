@@ -1,19 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {Text} from 'react-native';
+import Wallpaper from '../../components/Wallpaper';
 
-// import { Container } from './styles';
+import {Container} from './styles';
 
 const Gallery = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#000000',
-      }}>
-      <Text style={{color: '#fff'}}>Gallery Screen</Text>
-    </View>
+    <Container>
+      <Wallpaper>
+        <Text style={{color: '#fff'}}>Gallery Screen</Text>
+      </Wallpaper>
+    </Container>
   );
 };
 
